@@ -46,7 +46,7 @@ def copy_images(imagePaths, folder):
 		destination = os.path.join(labelFolder, imageName)
 		shutil.copy(path, destination)
 		
-def sketch_dataset():
+def build_sketch_dataset():
     # load all the image paths and randomly shuffle them
     print("[INFO] loading image paths...")
     imagePaths = get_imgsPaths(base_config.SKETCH_DATASET_PATH)
