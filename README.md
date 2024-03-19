@@ -1,6 +1,6 @@
 # SketchToReality: Enhancing AI's Understanding and Creation of art
 
-![Sketchy vs Diffusion](/path/to/image.png "Intro Image")
+![Sketchy vs Diffusion](https://github.com/VictorBbt/SketchToReality/blob/main/img/intro.png "Intro Image")
 
 This is the final project done for the course Advanced Computer Vision given by Vicky Kalogeiton at Ecole Polytechnique. This project aims to assess how models deal with stylistic differences between images such as realistic images ad simple sketches. 
 
