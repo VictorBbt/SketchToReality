@@ -30,5 +30,8 @@ Finally, we generate images for the same 100 images as in the text-in-the-middle
 
 Running the notebook should be seamless in any cuda environment, as all the required installations are done within the notebooks. To build the *train, test* and *validation* splits for the Sketchy database, run the codes provided in **utils**. To do so, you should already have downloaded in your local repository the original dataset.
 
-![Sketchy vs Diffusion](https://github.com/VictorBbt/SketchToReality/blob/main/img/butterfly.png "Butterfly")
+### So what is art ?
+
+If these questions about the nature of art and the notion of creation interest you, you can re d (in French) the book of Alban Leveau-Vallier *IA: l'intuition à l'épreuve des algorithmes*. Now, we leave you with these beautiful (real or generated ?) butterflies 🦋
+![butterflies](https://github.com/VictorBbt/SketchToReality/blob/main/img/butterfly.png "Butterfly")
 
