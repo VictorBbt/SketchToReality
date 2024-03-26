@@ -17,14 +17,9 @@ Although textual description of sketches can be whether to simple or clumsy (exp
 First, we identify and try ten different prompts (we used ChatGPT to get ideas) that could help us get precise captions. We then compare the captions produced by two different models, namely [Llava](https://huggingface.co/docs/transformers/model_doc/llava) and [Blip2](https://huggingface.co/docs/transformers/model_doc/blip-2) qualitatively and quantitatively (length of the answers, accuracy). The different prompts and answers provided by Llava are available in the **Inference_with_LLava_for_multimodal_generation.ipynb**. In **Inference_with_BLIP_2_(int8).ipynb**, we only try the 3 best prompts found with Llava to generate captions.
 Then, we generate images with StableDiffusions1.5, and assess the quality of the generated images with the **Fréchet Inception Distance**, using [this implementation](https://github.com/mseitzer/pytorch-fid).
 
-
-PLOT OF MEASURES 
-
 ## Direct Approach
 
-In this part, we use recent models to incorporate specific subjects in diffusion models. The goal is to convey, with few sketches, an idea of what is a sketch.
-
-IMAGES 
+In this part, we use recent models to incorporate specific subjects in diffusion models. The goal is to convey, with few sketches, an idea of what is a sketch. The generated images can be found in *mosaics*.
 
 The most recent model is [DreamBooth](https://dreambooth.github.io), that consists in attaching a subject (preset in 1~5 images) to an unknown word of the Diffusion Model's vocabulary. This methods finetunes all the weights of the model. We used DreamBooth with different sketches, whether of the same class (cat, dog) or with a sequential training with different classes. The training code and inference examples can be found in the notebooks **dreambooth.ipynb** and **dreambooth_sequential.ipynb**. 
  We also try to finetune a diffusion model with [Textual Inversion](https://textual-inversion.github.io) in **textual_inversio.ipynb**
@@ -34,4 +29,6 @@ Finally, we generate images for the same 100 images as in the text-in-the-middle
 ## Running the code
 
 Running the notebook should be seamless in any cuda environment, as all the required installations are done within the notebooks. To build the *train, test* and *validation* splits for the Sketchy database, run the codes provided in **utils**. To do so, you should already have downloaded in your local repository the original dataset.
+
+![Sketchy vs Diffusion](https://github.com/VictorBbt/SketchToReality/blob/main/img/butterfly.png "Butterfly")
 
